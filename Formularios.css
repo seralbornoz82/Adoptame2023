@@ -63,9 +63,10 @@
 
 .twitter-btn{
     color: #bbb;
-    background-color: rgb(120, 214, 198);
+    background-color: rgb(255, 255, 255);
     border: none;
-    width: 200px;
+    width: 35px;
+    height: 35px;
     border-radius: 5px;
     cursor: pointer;
 }
