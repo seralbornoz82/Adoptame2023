@@ -1,0 +1,242 @@
+/* Creamos nuestra normalizacion css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+/*Navegador hamburguesa*/
+
+.navbar{
+    max-width: 1200px;
+    background: rgb(158, 221, 255);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: auto;
+
+}
+
+.nav_logo{
+    font-weight: bold;
+    font-size: 26px;
+    margin: 15px;
+    color: rgb(100, 153, 233);
+}
+
+.nav_items a{
+    font-size: 20px;
+    margin: 25px;
+    color: rgb(100, 153, 233);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.nav_items a:hover{
+    background-color: rgb(190, 255, 247);
+    border-radius: 80px;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .nav_items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgb(166, 246, 255);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: 0.3s ease all ;
+        z-index: 1;
+    }
+
+    .nav_items a{
+        text-align: center;
+    }
+
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .nav_toggle span{
+        width: 30px;
+        height: 4px;
+        background: rgb(190, 255, 247);
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .close span{
+        transform: rotate(45deg) translate(0px , 0px);
+    }
+
+    .close span:nth-child(2){
+        display: none;
+    }
+    .close span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px , 1px);
+    }
+    
+    .open{
+        transform: translateX(0) !important;
+    }
+}
+
+/* Estilos para el carrrusel */
+
+
+#contenitemcarrusel{
+    max-width: 1200px;
+    margin-top: 20px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    z-index: 3;
+}
+
+.item-carrusel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjetas-carrusel{
+    height: 100%;
+    
+}
+
+.flechas-carrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.flechas-carrusel > a > i > img{
+    color: white;
+}
+
+/* Estilos para el body donde se encuentra el main . Le damos estilos a nuestro contenido*/
+.banner{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.contenedor .tarjetas{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .tarjetas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .tarjetas img{
+    width: 330px;
+    height: 220px;
+}
+
+.contenedor .tarjetas h5{
+    font-weight: 600;
+}
+
+.contenedor .tarjetas .descripsion-tarjetas{
+    padding: 0 1rem ;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contenedor .tarjetas a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+
+
+
+/* Estilos para nuestro pie de pagina (footer)*/
+.menu-footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-footer > li > a{
+    display: block;
+    padding: 15px 25px;
+    color:rgb(100, 153, 233);
+    text-decoration: none;
+}
+.menu-footer > li:hover{
+    background-color: rgb(190, 255, 247);
+    border-radius: 80px;
+}
+
+footer{
+    max-width: 1200px;
+    background-color: rgb(158, 221, 255);
+    padding: 25px 25px;
+    text-align: center;
+    color: rgb(100, 153, 233);
+    margin-top: auto;
+    border-radius: 12px;
+    font-size: 20px;
+    align-content: center;
+
+
+}
