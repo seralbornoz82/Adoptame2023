@@ -68,7 +68,7 @@ body {
         height: auto;
         transform: translateX(-100%);
         transition: 0.3s ease all ;
-        z-index: 1;
+    
     }
 
     .nav_items a{
@@ -119,7 +119,7 @@ body {
     width: 100%;
     justify-content: center;
     margin: auto;
-    z-index: 3;
+    
 }
 
 .item-carrusel{
