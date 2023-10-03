@@ -1,0 +1,409 @@
+/*Tipografia*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Raleway:wght@100&display=swap');
+
+/*font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+/* CREANDO ESTILOS CON CSS*/
+:root{
+    /*Pallet color*/
+    --primary-solid: #4fedf7;
+    --primary-900: rgb(79, 237, 247, 0.9);
+    --primary-500: rgb(79, 237, 247, 0.5);
+    --primary-300: rgb(79, 237, 247, 0.3);
+
+    --secundary-solid:#28c7d2;
+    --secundary-900:rgb(40, 199, 210, 0.9);
+    --secundary-500:rgb(40, 199, 210, 0.5);
+    --secundary-300:rgb(40, 199, 210, 0.3);
+     
+    --tertiary-solid: #00a1ac;
+    --tertiary-900: rgb(0, 161, 172, 0.9);
+    --tertiary-500: rgb(0, 161, 172, 0.5);
+    --tertiary-300: rgb(0, 161, 172, 0.3);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #ffffff;
+
+    /*Tipogragrafias*/
+
+    --base-font:'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+    
+    /* Font-sizes */
+    /* Buenas practicas usar (em) un em=16px, pero hakeamos y lo pasamos a 1em=10px */
+    --font-display:4.6em;
+    --font-jumbo:3.8em;
+    --font-xlager:3em;
+    --font-lager:2.4em;
+    --font-medium:1.8em;
+    --font-small:1.6em;
+    --font-xsmall:1.4em;
+    --font-xxsmall:0.8em;
+
+    /*Spacings-espaciadores*/
+    --spacing-128:12.8rem;
+    --spacing-68:6.8rem;
+    --spacing-36:3.6rem;
+    --spacing-28:2.8rem;
+    --spacing-24:2.4rem;
+    --spacing-20:2rem;
+    --spacing-16:1.6rem;
+    --spacing-12:1.2rem;
+    --spacing-8:0.8rem;
+    
+
+
+
+
+    
+}
+
+/*Normalizar la pagina con css*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--base-font);
+    font-size: 62.50;
+    /*color: var(--dark-solid);*/
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    font-family: inherit;
+   
+}
+
+ul ,ol {
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.8em;
+}
+
+header , footer{
+    color:var(--light-font-solid);
+    font-family: var(--alternative-font);
+}
+
+img{
+    width: 100%;
+}
+ 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Navegador hamburguesa*/
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    background: var(--tertiary-solid);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: auto;
+
+}
+
+.nav_logo{
+    font-weight: bold;
+    font-size: var(--font-lager);
+    margin: 15px;
+    color:var(--light-bg-solid);
+}
+
+.nav_items a{
+    font-size: var(--font-xsmall);
+    margin: 25px;
+    color:var(--light-bg-solid) ;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.nav_items a:hover{
+    background-color: var(--primary-500);
+    border-radius: 80px;
+    transition: 1s;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+@media(max-width: 1180px){
+    .nav_items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: var(--tertiary-900);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: 0.3s ease all ;
+        border-radius: 12px;
+        z-index: 1;
+    }
+
+    .nav_items a{
+        text-align: center;
+        font-size: var(--font-small);
+    }
+
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .nav_toggle span{
+        width: 30px;
+        height: 4px;
+        background:var(--primary-900);
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .close span{
+        transform: rotate(45deg) translate(0px , 0px);
+    }
+
+    .close span:nth-child(2){
+        display: none;
+    }
+    .close span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px , 1px);
+    }
+    
+    .open{
+        transform: translateX(0) !important;
+    }
+
+}
+
+/*Inicio de estilos slider_carrusel*/
+
+.slider-frame{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: var(--spacing-16) auto  ;
+    border-radius: var(--spacing-12);
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    height:600px;
+    box-shadow: 35px 35px 35px var(--tertiary-300);
+}
+.slider-frame p{
+    color: var(--light-bg-solid);
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    font-family: var(--base-font) bold;
+    font-size: var(--font-lager);
+    text-shadow: 0 2px 2px var(--dark-bg-solid);
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+}
+
+/* Aplicamos medias querys para responsive del slider*/
+
+@media (max-width:780px){
+    .slider-frame{
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin: var(--spacing-16) auto  ;
+        border-radius: var(--spacing-12);
+        overflow: hidden;
+        position: relative;
+    }
+    .slider-frame p{
+        color: var(--light-bg-solid);
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        font-family: var(--base-font) bold;
+        font-size: var(--font-xsmall);
+        text-align: center;
+        text-shadow: 0 1.3px 1.3px var(--dark-bg-solid);
+    }
+}
+
+/* Estilos para el body donde se encuentra el main . Le damos estilos a nuestro contenido*/
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: var(--spacing-36);
+}
+
+
+.contenedor .tarjetas{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .tarjetas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .tarjetas img{
+    width: 330px;
+    height: 220px;
+}
+
+.contenedor .tarjetas h5{
+    font-weight: 600;
+}
+
+.contenedor .tarjetas .descripsion-tarjetas{
+    padding: 0 1rem ;
+    font-size: var(--font-small);
+    color:var(--dark-bg-solid);
+    font-weight: 300;
+}
+
+.contenedor .tarjetas a{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--tertiary-solid);
+}
+
+/* Aplicamos medias querys para responsive de las tarjetas*/
+
+@media(max-width:780px){
+    .contenedor .tarjetas img{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor .tarjetas .descripsion-tarjetas{
+        padding: 0 1rem ;
+        font-size: var(--font-xsmall);
+        color:var(--dark-bg-solid);
+        font-weight: 300;
+    }
+}
+
+
+/* Estilos para nuestro pie de pagina (footer)*/
+
+
+footer{
+    width: 100%;
+    max-width: 1200px;;
+    padding: 25px 25px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 12px;
+    font-size: 20px;
+    align-content: center;
+    background: var(--tertiary-solid);
+
+}
+.menu-footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu-footer > li > a{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+.menu-footer > li:hover{
+    background-color: var(--primary-500);
+    border-radius: 80px;
+    transition: 1s;
+}
+@media (max-width:780px) {
+
+    footer{
+        background: var(--tertiary-solid);
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+    }
+    .menu-footer{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .menu-footer > li > a{
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+    }
+    .menu-footer > li:hover{
+        background-color: var(--primary-500);
+        border-radius: 80px;
+        transition: 1s;
+    }
+}
