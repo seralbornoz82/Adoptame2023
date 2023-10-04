@@ -236,6 +236,27 @@ footer{
     border-radius: 12px;
     font-size: 20px;
     align-content: center;
-
-
 }
+
+.acercade{
+    /* display: flex;
+    justify-content: center; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* text-align: center;
+    align-content: center; */
+}
+.lis{
+    text-decoration: solid;
+    list-style-type: disc;
+} /*cambio de viñetas en las listas*/
+
+.parr{
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px;
+}
+
+h3{ padding-top: 15px;}
