@@ -241,9 +241,11 @@ footer{
 .acercade{
     /* display: flex;
     justify-content: center; */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 10px;
+    color: antiquewhite;
     /* text-align: center;
     align-content: center; */
 }
@@ -261,3 +263,11 @@ footer{
 }
 
 h3{ padding-top: 15px;}
+
+body{
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);  */
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}

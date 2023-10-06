@@ -76,6 +76,7 @@ html{
     /*color: var(--dark-solid);*/
 }
 
+
 a{
     text-decoration: none;
     color:inherit;
@@ -110,7 +111,7 @@ img{
     width: 100%;
     max-width: 1200px;
     background: var(--tertiary-solid);
-    height: 80px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -313,6 +314,7 @@ img{
 
 .contenedor .tarjetas h5{
     font-weight: 600;
+    color: var(--tertiary-solid);
 }
 
 .contenedor .tarjetas .descripsion-tarjetas{
@@ -356,6 +358,7 @@ footer{
     border-radius: 12px;
     font-size: 20px;
     align-content: center;
+    align-self: flex-end;
     background: var(--tertiary-solid);
 
 }
