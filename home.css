@@ -248,6 +248,7 @@ footer{
     align-content: center; */
 }
 .lis{
+    list-style: square inside;
     text-decoration: solid;
     list-style-type: disc;
 } /*cambio de viñetas en las listas*/
