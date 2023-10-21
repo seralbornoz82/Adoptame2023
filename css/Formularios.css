@@ -107,7 +107,7 @@ img{
 }
 
 /* Inicio del formulario*/
-.container{
+.container-form{
     margin: auto;
     padding: 30px;
     display: flex;
@@ -119,8 +119,9 @@ img{
     height: 100%;
     background-color:var(--secundary-500);
     border-radius: 12px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: var(--spacing-36);
+    margin-bottom: var(--spacing-36);
+    color: var(--light-bg-solid);
 }
 
 .boton{
@@ -303,7 +304,7 @@ label input:focus{
 /*Inicio de resposivo del formulario*/
 
 @media(max-width:780px){
-    .container{
+    .container-form{
         margin: auto;
         padding: 25px;
         display: flex;
