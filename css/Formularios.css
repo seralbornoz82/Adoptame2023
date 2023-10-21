@@ -101,10 +101,11 @@ img{
     width: 100%;
 }
  
-/*.container{
+.container{
     max-width: 1200px;
-    margin: 0 auto;
-}*/
+    margin-top: 20px;
+    
+}
 
 /* Inicio del formulario*/
 .container{
