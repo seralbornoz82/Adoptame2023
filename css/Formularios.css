@@ -70,7 +70,10 @@ font-family: 'Raleway', sans-serif;*/
     box-sizing: border-box;
 }
 
-
+body{
+   margin-top: 20px;
+}
+    
 html{
     font-family: var(--base-font);
     font-size: 62.50;
@@ -100,14 +103,25 @@ header , footer{
 img{
     width: 100%;
 }
- 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* Inicio del formulario*/
 .container{
+   margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 500px;
+    height: 100%;
+    background-color:var(--secundary-500);
+    border-radius: 12px;
+    margin-top: var(--spacing-36);
+    margin-bottom: var(--spacing-36);
+    color: var(--light-bg-solid);
+}
+.container-form{
     margin: auto;
     padding: 30px;
     display: flex;
@@ -119,9 +133,11 @@ img{
     height: 100%;
     background-color:var(--secundary-500);
     border-radius: 12px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: var(--spacing-36);
+    margin-bottom: var(--spacing-36);
+    color: var(--light-bg-solid);
 }
+
 
 .boton{
     align-self: flex-start;
@@ -303,7 +319,24 @@ label input:focus{
 /*Inicio de resposivo del formulario*/
 
 @media(max-width:780px){
-    .container{
+   .container{
+        margin-top: 20px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-color: var(--secundary-500);
+        border-radius: 12px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: var(--font-xxsmall);
+    }
+    .container-form{
         margin: auto;
         padding: 25px;
         display: flex;
