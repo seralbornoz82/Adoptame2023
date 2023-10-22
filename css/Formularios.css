@@ -100,16 +100,10 @@ header , footer{
 img{
     width: 100%;
 }
- 
-.container{
-    max-width: 1200px;
-    margin-top: 20px;
-    
-}
 
 /* Inicio del formulario*/
 .container{
-    margin: auto;
+   margin-top: 20px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -323,7 +317,7 @@ label input:focus{
 
 @media(max-width:780px){
    .container{
-        margin: auto;
+        margin-top: 20px;
         padding: 25px;
         display: flex;
         flex-direction: column;
