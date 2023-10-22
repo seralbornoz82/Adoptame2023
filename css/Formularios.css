@@ -70,7 +70,10 @@ font-family: 'Raleway', sans-serif;*/
     box-sizing: border-box;
 }
 
-
+body{
+   margin-top: 20px;
+}
+    
 html{
     font-family: var(--base-font);
     font-size: 62.50;
