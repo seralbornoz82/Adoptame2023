@@ -245,14 +245,18 @@ footer{
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: antiquewhite;
-    /* text-align: center;
+   text-align: justify;
     align-content: center; */
 }
 .lis{
     list-style: square inside;
     text-decoration: solid;
     list-style-type: disc;
+    padding-top: 10px;
+    padding-bottom: 10px;
 } /*cambio de viñetas en las listas*/
 
 .parr{
@@ -261,8 +265,6 @@ footer{
     font-weight: bold;
     padding: 15px;
 }
-
-h3{ padding-top: 20px;}
 
 body{
     /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
@@ -286,5 +288,10 @@ body{
     padding-bottom: 20px;
     margin: 0 auto;
 }
-h3{
+h3, h4{
+    padding-top: 10px;
     padding-bottom: 10px;}
+
+
+  
+  
