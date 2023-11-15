@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../img/Nuestros logo/favicon.ico">
     <link rel="stylesheet" href="../css/Formularios.css">
     <link rel="stylesheet" href="../css/estilos_adoptame_blue.css">
     <script src="https://kit.fontawesome.com/a4dd37e9ad.js" crossorigin="anonymous"></script> <!-- cambio de iconos -->
@@ -62,7 +62,7 @@
                 <span>O...</span>
                 <hr>
             </div>
-            <form action="" method="">
+            <form action=""  id="formulario" onsubmit="return validarFormulario()" >
                 <div class="section-inputs">
                     <label for="name">
                         <span>Nombre</span>
@@ -79,18 +79,18 @@
                 </label>
                 <label for="password">
                     <span>Contraseña</span>
-                    <input id="password" name="password" placeholder="+6 Caracteres"/>
+                    <input id="password" name="password" placeholder="+6 Caracteres" />
                 </label>
                 <label for="checkbox" class="checkbox-label">
-                    <input type="checkbox" id="checkbox"/>
+                    <input type="checkbox" id="checkbox" name="checkbox"/>
                     <span>Acepto las condicciones legales y politicas</span>
                 </label>
-                <button type="submit" class="submit-btn">
+                <button type="submit" class="submit-btn" value="Crear Cuenta" >
                     Crear Cuenta
                 </button>
             </form>
         
-          </div>
+        </div>
         
 
     </main>
@@ -126,7 +126,8 @@
                 <p class="footys"> @Adoptame&COPY-Todos los derechos reservados 2023</p> 
         </div>  
       </footer><!--Fin del footer-->
-
       <script src="../js/app_home.js"></script>
+      <script src="../js/main.js"></script>
+      <script src="../js/form.js"></script>
 </body>
 </html>
