@@ -17,13 +17,13 @@ function validarFormulario(evento) {
 
 
   var name = document.getElementById('name').value;
-  if(name.length == 0 || name ==='') {
+  if(name.length == 0 || name == null || /^\s+$/.test(name) ) {
     alert('No has escrito nada en el nombre');
     return;
   }
 
   var username = document.getElementById('username').value;
-  if(username.length == 0 || username ==='') {
+  if(username.length == 0 || username == null || /^\s+$/.test(username)) {
     alert('No has escrito nada en el nombre usuario');
     return;
   }
@@ -37,7 +37,7 @@ function validarFormulario(evento) {
   }
 
   var password = document.getElementById('password').value;
-  if (password.length < 6) {
+  if (password.length < 6 || /^\s+$/.test(password)) {
     alert('La clave no es válida');
     return;
   }
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function validarContacto(evento) {
   evento.preventDefault();
   var name = document.getElementById('name').value;
-  if(name.length == 0) {
+  if(name.length == 0 || name == null || /^\s+$/.test(name)) {
     alert('No has escrito nada en el nombre');
     return;
   }
@@ -82,7 +82,7 @@ function validarContacto(evento) {
     return;
   }
   var message= document.getElementById('message').value;
-  if (message.length < 10) {
+  if (message.length < 10 || /^\s+$/.test(message)) {
     alert('El mensaje no es válida');
     return;
   }
