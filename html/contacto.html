@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/Nuestros logo/favicon.ico">
-    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/Formularios.css">
     <link rel="stylesheet" href="../css/estilos_adoptame_blue.css">
     <script src="https://kit.fontawesome.com/a4dd37e9ad.js" crossorigin="anonymous"></script> <!-- cambio de iconos -->
@@ -108,20 +107,20 @@
         <div class="container-form"> 
             <h3>Dejanos tus datos y nos contactamos</h3>
             <div class="boton">
-              <form action="https://formspree.io/f/mgejpqdv"method="POST" id="form" >
+              <form id="formulario" onsubmit="return validarContacto()">
                 <div class="section-inputs">
                     <label for="name">
                         <span>Nombre</span>
                         <input id="name" name="name"/>
                     </label>
-                    <label for="username">
+                    <label for="apellido">
                         <span>Apellido</span>
-                        <input id="username" name="username"/>
+                        <input id="apellido" name="apellido"/>
                     </label>
                 </div>
                 <label for="Telefono">
                     <span>Telefono</span>
-                    <input id="password" name="password" placeholder="+10 Numeros"/>
+                    <input id="telefono" name="telefono" placeholder="+10 Numeros"/>
                 </label>
                 <label for="email">
                     <span>Email</span>
