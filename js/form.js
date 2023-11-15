@@ -8,28 +8,31 @@ form.addEventListener('submit',e =>{
   }
 })
 
-//Validacion Formulario de registro
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("formulario").addEventListener('submit', validarFormulario); 
 });
 
 function validarFormulario(evento) {
   evento.preventDefault();
+
+
   var name = document.getElementById('name').value;
-  if(name.length == 0) {
+  if(name.length == 0 || name ==='') {
     alert('No has escrito nada en el nombre');
     return;
   }
 
   var username = document.getElementById('username').value;
-  if(username.length == 0) {
+  if(username.length == 0 || username ==='') {
     alert('No has escrito nada en el nombre usuario');
     return;
   }
 
   var email = document.getElementById('email').value;
-  if(email.length == 0) {
-    alert('No has escrito nada en el email');
+  var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  var esValido=expReg.test(email);
+  if(esValido==false) {
+    alert('El email es invalido de contener nombre+@+email.com');
     return;
   }
 
@@ -60,19 +63,21 @@ function validarContacto(evento) {
   }
 
   var apellido = document.getElementById('apellido').value;
-  if(apellido.length == 0) {
-    alert('No has escrito nada en apellido');
+  if(apellido==null|| apellido.length==0) {
+    alert('Apellido invalido');
     return;
   }
 
   var email = document.getElementById('email').value;
-  if(email.length == 0) {
-    alert('No has escrito nada en el email');
+  var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  var esValido=expReg.test(email);
+  if(esValido==false) {
+    alert('El email es invalido de contener nombre+@+email.com');
     return;
   }
 
   var telefono = document.getElementById('telefono').value;
-  if (telefono.length < 10) {
+  if (telefono.length < 10 || isNaN(telefono)) {
     alert('El telefono no es válida');
     return;
   }
