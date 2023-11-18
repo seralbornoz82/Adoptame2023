@@ -397,11 +397,11 @@ iframe:hover{
         transition: all 0.25s;
     }
     .contenedor .tarjetas h5{
-        font-weight: 400;
+        font-weight: 300;
         color: var(--tertiary-solid);
     }
     .contenedor .tarjetas a{
-        font-weight: 300;
+        font-weight: 200;
         text-decoration: none;
         color: var(--tertiary-solid);
     }
