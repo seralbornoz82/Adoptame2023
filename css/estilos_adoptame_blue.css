@@ -384,6 +384,7 @@ iframe:hover{
     .contenedor .tarjetas img{
         width: 310px;
         height: 110px;
+        border-radius: 10px;
     }
     .contenedor .tarjetas{
         width: 320px;
