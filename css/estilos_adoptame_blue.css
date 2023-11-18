@@ -382,17 +382,35 @@ iframe:hover{
 
 @media(max-width:780px){
     .contenedor .tarjetas img{
+        width: 310px;
+        height: 110px;
+    }
+    .contenedor .tarjetas{
         width: 320px;
-        height: 210px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.083);
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+    .contenedor .tarjetas h5{
+        font-weight: 400;
+        color: var(--tertiary-solid);
+    }
+    .contenedor .tarjetas a{
+        font-weight: 300;
+        text-decoration: none;
+        color: var(--tertiary-solid);
     }
     .contenedor .tarjetas .descripsion-tarjetas{
         padding: 0 1rem ;
         font-size: var(--font-xsmall);
         color: var(--light-bg-solid);
-        font-weight: 300;
+        font-weight: 250;
     }
 }
-
 
 /* Estilos para nuestro pie de pagina (footer)*/
 
