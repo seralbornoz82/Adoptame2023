@@ -141,7 +141,7 @@ img{
 .nav_items a:hover{
     background-color: var(--primary-500);
     border-radius: 80px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .nav_toggle{
