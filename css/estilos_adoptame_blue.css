@@ -46,6 +46,7 @@ font-family: 'Raleway', sans-serif;*/
     /*Spacings-espaciadores*/
     --spacing-128:12.8rem;
     --spacing-68:6.8rem;
+    --spacing-42:4.2rem;
     --spacing-36:3.6rem;
     --spacing-28:2.8rem;
     --spacing-24:2.4rem;
@@ -291,7 +292,7 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    margin-top: var(--spacing-36);
+    margin-top: var(--spacing-42);
 }
 
 
@@ -388,7 +389,7 @@ iframe:hover{
     }
     .contenedor .tarjetas{
         width: 320px;
-        height: 270px;
+        height: 300px;
         border-radius: 10px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.083);
         overflow: hidden;
