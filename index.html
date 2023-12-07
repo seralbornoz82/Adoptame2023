@@ -44,12 +44,13 @@
             </div>
         </section><!--Fin del slider-->
         <section><!--Inicio de las tarjetas-->
-            <div class="contenedor">
-                <div class="tarjetas">
-                  <a href="./html/tomas.html"><img src="./img/puppy-2785074_1280.jpg" alt="..."></a>
-                  <h5>TOMAS</h5>
-                    <p class=" descripsion-tarjetas"> Hola soy Tomas y gracias a @Adoptame hoy tengo una familia que me cuida.</p>
-                    <a href="./html/contacto.html">@Adoptame</a>        
+            <div class="contenedor" id="app">
+                <div class="tarjetas" v-for="producto in productos">
+                  <a href="./html/tomas.html"><img :src="producto.imagen" :alt="producto.nombre"></a>
+                  <h5>{{producto.nombre}}</h5>
+                  <p class=" descripsion-tarjetas"> {{producto.descripcion}}</p>
+                  <h3>Fecha de ingreso:{{producto.fecha}}</h3>
+                  <a href="./html/contacto.html">@Adoptame</a>        
                 </div>
         
                 <div class="tarjetas">
