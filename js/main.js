@@ -1,3 +1,18 @@
+document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-sm
+navbar-light bg-light">
+<div class="container">
+<a class="navbar-brand" href="../templates/productos.html">CRUD</a>
+
+
+
+</div>
+</nav>`
+
+
+
+
+
+
 // Inicio de api rest :de imagenes publicas de github.
 const URL="https://api.thecatapi.com/v1/images/search?limit=10";
 
