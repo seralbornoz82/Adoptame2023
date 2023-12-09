@@ -29,10 +29,10 @@
         </div>
     </nav>
   </header>
-  <section>
-    <div class="acercade">
-      <img class="puppy" src="../img/puppy-2785074_1280.jpg" alt="">
-      <h2 class="acercade">Tomás, un perro cariñoso y juguetón busca un hogar</h2>
+  <section id="app">
+    <div class="acercade" v-for="producto in productos" >
+      <img class="puppy":src="producto.imagen" :alt="producto.nombre">
+      <h2 class="acercade">{{producto.nombre}}, un perro cariñoso y juguetón busca un hogar</h2>
       Tomás es un perro mestizo de dos años, de tamaño mediano. Es un perro muy cariñoso y juguetón, y le encanta estar rodeado de gente. Es muy bueno con los niños y con otros perros.
       Tomás está esterilizado y tiene todas sus vacunas. Está en buen estado de salud y es muy activo. Le encanta pasear, jugar al frisbee y correr.
       Tomás está buscando un hogar donde pueda ser amado y cuidado. Sería un gran compañero para una familia activa que quiera darle mucho cariño.
@@ -97,7 +97,11 @@
                 <p class="footys"> @Adoptame&COPY-Todos los derechos reservados 2023</p> 
         </div>  
     </footer><!--Fin del footer-->
-    <script src="../js/app_home.js"></script>
+   
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+     <script src="../js/app_home.js"></script></script><!--Js para el menu hamburguesa-->
+    <script src="../js/productos.js"></script>
+    <script src="../js/producto_editar.js"></script>
     
 </body>
 </html>
