@@ -16,7 +16,7 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <div class="container" id="app">
 <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
 <h2>Editar Publicaciones </h2>
-<p>descripcion:{{descripcion}}</p>
+
 <div class="mb-3">
 <label for="id">Id</label>
 <input type="number" name="id" id="id" disabled v-model="id" >
@@ -28,6 +28,7 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <div class="mb-3">
 <label for="descripcion">Descripcion</label>
 <input type="text" name="descripcion" id="descripcion" v-model="descripcion"/>
+  <p>descripcion:{{descripcion}}</p>
 </div>
 <div class="mb-3">
 <label for="fecha">Fecha</label>
